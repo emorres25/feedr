@@ -20,10 +20,12 @@ def latest_five():
     i = 0
     for i in range(0, 5):
         print (Back.CYAN + str(i + 1) + ")" + Style.RESET_ALL + " " +
-            Back.RED + "Title:" + (Style.RESET_ALL + " " + d.entries[i].title))
+               Back.RED + "Title:" +
+               (Style.RESET_ALL + " " + d.entries[i].title))
         print (' '*(len(str(i+1))) + '  ' + Back.YELLOW + "Link:" +
-            (Style.RESET_ALL + " " + d.entries[i].link))
+               (Style.RESET_ALL + " " + d.entries[i].link))
         # print "Content: " + d.entries[i]['content']
+
 
 def show(title, link, desc):
     print str(title)
@@ -44,6 +46,7 @@ def menu():
     else:
         print "Not a valid choice"
         exit(0)
+
 
 def check_args():
     if len(sys.argv) != 2:
