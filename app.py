@@ -34,8 +34,8 @@ def show(title, link, desc):
 
 def menu():
     print "What do you wish to do now?"
-    print "1. Read the latest issue"
-    print "2. Get the titles of the latest 5 issues."
+    print "1. Access the most recent item from your feed"
+    print "2. Access the 5 most recent items from your feed."
     opt = int(raw_input('Choice: '))
     if opt == 1:
         latest()
